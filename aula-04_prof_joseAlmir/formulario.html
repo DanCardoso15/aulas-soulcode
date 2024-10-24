@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Cadastro de Usuário</title>
+    </head>
+    <body>
+        <h2>Cadastro</h2>
+        <!--
+            <form> -> Conteiner do formulário
+            <input>, <textarea>, <select> -> campos do formulário
+            <label> -> rótulo dos campos
+        -->
+        <form>
+            <!-- O atributo "for" vincula o campo e o rótulo -->
+            <!-- placeholder é uma dica para o usuário -->
+            <div>
+                <!-- "value" serve para colocar um valor dentro do campo de forma padrão -->
+                <label for="cNome">Nome:</label>
+                <input value="Danilo" type="text" id="cNome" name="nome" placeholder="Seu nome" required> 
+                <!-- "required" torna o campo de preenchimento obrigatório -->
+            </div>
+
+            <div>
+                <label for="cEmail">Email:</label>
+                <input type="email" id="cEmail" name="email" placeholder="Seu email" required>
+            </div>
+
+            <div>
+                <label for="cSenha">Senha:</label>
+            <!-- "minlength" é usado para limitar a quantidade de caracteres do campo -->
+                <input type="password" id="cSenha" name="senha" placeholder="Sua senha" minlength="8" required>
+            </div>
+
+            <div>
+                <label for="cTelefone">Telefone:</label>
+                <input type="tel" id="cTelefone" name="telefone" placeholder="Seu telefone" required>
+            </div>
+
+            <div>
+                <label for="cLinkedin">Link do Linkedin:</label>
+                <input type="url" id="cLinkedin" name="linkedin" placeholder="Seu Linkedin">
+            </div>
+
+            <div>
+                <label for="cIdade">Idade:</label>
+                <input type="number" min="0" max="130" id="cIdade" name="idade" placeholder="Sua Idade" required>
+            </div>
+
+            <div>
+                <label for="cDataNasc">Data de Nascimento:</label>
+                <input type="date" min="2000-01-01" max="2024-10-24" id="cDataNasc" name="data" required>
+            </div>
+
+            <div>
+                <label for="cFoto">Sua foto:</label>
+                <input type="file" id="cFoto" name="foto" accept=".jpg, .png">
+                <br><small>Arquivo de extenção .png ou .jpg</small></br>
+            </div>
+
+            <div>
+                <p>Sua Linguagem favorita:</p>
+                <!-- "required" torna pelo menos uma das opções obrigatórias -->
+                <input type="radio" id="html" name="linguagem" required> 
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="linguagem" required>
+                <label for="css">CSS</label>
+                <input type="radio" id="javascript" name="linguagem" required>
+                <label for="javascript">JAVASCRIPT</label>
+            </div>
+
+            <div>
+                <label for="cDescricao">Fale sobre você</label>
+                <textarea id="cDescricao" name="descricao" placeholder="Fale sobre os seus hobbies, etc"></textarea>
+            </div>
+
+            <div>
+                <label for="cEscolaridade">Escolaridade</label>
+                <select id="cEscolaridade" name="escolaridade" required>
+                    <!-- "value" vazio torna a opção obrigatória com o required ativado -->
+                    <option disabled selected value="">Selecione uma opção</option>
+                    <option>Ensino Fundamental Completo</option>
+                    <option>Ensino Médio Completo</option>
+                    <option>Ensino Superior Completo</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" id="cReceberEmail" name="receberEmail" required>
+                <label for="cReceberEmail">Quero receber emails promocionais</label>
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button> <!-- Mesmo se não tivesse o "submit" a sua função já estaria ativada -->
+                <button type="reset">Limpar</button>
+
+                <div>
+                    <!-- Indica a área do formulário que este botão tem outra função -->
+                    <button type="button">Ajuda</button>
+                </div>
+        </form>
+    </body>
+</html>            
