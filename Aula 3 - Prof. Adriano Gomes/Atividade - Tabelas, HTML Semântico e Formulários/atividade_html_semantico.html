@@ -6,62 +6,81 @@
     <title>Atividade de HTML Semântico</title>
 </head>
 <body>
-    <h1>Agenda da Conferência de Tecnologia</h1>
+    <header>
+        <h1>Agenda da Conferência de Tecnologia</h1>
+    </header>
+
     <section>
+        <h2>Introdução</h2>
         <p>
             A conferência será realizada no dia 10 de novembro de 2024, no Centro de Convenções de São Paulo, com o objetivo de promover o intercâmbio de conhecimento e inovação nas áreas de tecnologia e desenvolvimento profissional. O evento contará com uma programação rica em palestras e workshops, oferecendo aos participantes a oportunidade de aprender diretamente com especialistas, além de explorar tendências emergentes e novas ferramentas. A conferência busca reunir profissionais, estudantes e entusiastas para fomentar discussões e experiências práticas sobre os desafios e avanços no setor.
         </p>
     </section>
 
-    <form>
-        <!-- O atributo "for" vincula o campo e o rótulo -->
-        <!-- placeholder é uma dica para o usuário -->
-        <div>
-            <label for="cNome">Nome:</label>
-            <input type="text" id="cNome" name="nome" placeholder="Seu nome" required> 
-            <!-- "required" torna o campo de preenchimento obrigatório -->
-        </div>
+    <section>
+        <h2>Cronograma</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Horario</th>
+                        <th>Título</th>
+                        <th>Palestrante</th>
+                        <th>Local</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/11/2024</td>
+                        <td>20:00</td>
+                        <td>Utilizando HTML</td>
+                        <td>Danilo Cardoso</td>
+                        <td>Centro de Eventos SP</td>
+                    </tr>
+                    <tr>
+                        <td>10/11/2024</td>
+                        <td>20:00</td>
+                        <td>Utilizando CSS</td>
+                        <td>Marcos Paulo</td>
+                        <td>Centro de Eventos SP</td>
+                    </tr>
+                </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan=5>Inscreva-se na palestra para participar</td>
+                        </tr>
+                    </tfoot>
+            </table>
+    </section>
 
-        <div>
-            <label for="cEmail">Email:</label>
-            <input type="email" id="cEmail" name="email" placeholder="Seu email" required>
-        </div>
+    <section>
+        <h2>Cadastre-se</h2>
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome"> <br>
 
-        <div>
-            <label for="cSenha">Senha:</label>
-        <!-- "minlength" é usado para limitar a quantidade de caracteres do campo -->
-            <input type="password" id="cSenha" name="senha" placeholder="Sua senha" minlength="8" required>
-        </div>
-    </form>
+            <label for="email">Email</label>
+            <input type="email" id="email"> <br>
 
-    <table border="1" style="border-collapse: collapse;"> <!-- Inicio da tabela -->
-        <tr> <!-- Linha 1 -->
-            <th colspan="5"><strong>Agenda de palestras</strong></th> <!-- Coluna 1, 2 e 3 -->
-        </tr>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha"> <br>
 
-        <tr> <!-- Linha 2 -->
-            <td ><strong>Data</strong></td> <!-- Coluna 1 -->
-            <td><strong>Horário</strong></td> <!-- Coluna 2 -->
-            <td><strong>Título da Palestra/Workshop</strong></td> <!-- Coluna 3 -->
-            <td><strong>Palestrante</strong></td> <!-- Coluna 4 -->
-            <td><strong>Local</strong></td> <!-- Coluna 5 -->
-        </tr>
+            <button>Enviar</button>
+        </form>
+    </section>
 
-        <tr> <!-- Linha 3 -->
-            <td>01/01/2025</td> <!-- Coluna 1 -->
-            <td>13:00</td> <!-- Coluna 2 -->
-            <td>Como inovar com IA</td> <!-- Coluna 3 -->
-            <td>Jhon Marks</td> <!-- Coluna 4 -->
-            <td>São Paulo - SP</td> <!-- Coluna 5 -->
-        </tr>
 
-        <tr> <!-- Linha 3 -->
-            <td>01/01/2025</td> <!-- Coluna 1 -->
-            <td>15:00</td> <!-- Coluna 2 -->
-            <td>Tecnologia e Desenvolvimento Profissional</td> <!-- Coluna 3 -->
-            <td>Manphys Carlos</td> <!-- Coluna 4 -->
-            <td>São Paulo - SP</td> <!-- Coluna 5 -->
-        </tr>
-    </table>
+    <footer>
+        <aside>
+        <nav>
+            <ul>
+                <li><a href="https://instagram.com.br">Instagram</a></li>
+                <li><a href="https://Linkedin.com,br">Linkedin</a></li>
+                <li><a href="https://x.com.br">X</a></li>
+                <li><a href="https://Eventos.com.br">Entre em Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
+    </footer>
 </body>
 </html>
