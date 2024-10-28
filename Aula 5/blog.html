@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./blog.css">
+</head>
+<body>
+
+    <!--
+    
+    Todos os elementos dentro de "body" vão herdar a fonte "Arial" por causa da herança.
+
+    body {
+    font-family: Arial;
+    }
+
+    -->
+    
+    <h1 id="titulo">Blog</h1>
+
+        <!--
+        
+        "id" funciona diferente de uma classe. A classe pode se repitir, mas o "id" não pode. Portanto, o "id" só é utilizado em elemento que não se repetem.
+
+        ** O "id" raramente é utilizado. A classe geralmente é utilizado no lugar do "id"
+
+        #titulo {
+        color: green;
+        }
+
+        -->
+    
+    <h2>Postagens</h2>
+    <article class="art-post">
+        <h2 class="art-titulo">Assista os melhores filmes de 2024_1</h2>
+
+        <!-- CSS Externo 
+
+        Dessa forma, a estilização externa está sendo aplicada somente no "h2" do "article", caso contrário, só seria feita a estilização em todos os "h2". Aplicando a estilização de forma generica nos seletores não é considerado uma boa prática 
+            
+        article h2 {
+        color: coral;
+        } 
+            
+        -->    
+
+        <!-- 
+        
+        Para definir a estalização em lugares especificos do texto, é necessário definir uma classe. Dessa maneira, teremos a garantia de ter o estilo para o elemento correto. 
+            
+        Aqui estamos utilizando a classe criada em: "<h2 class="art-titulo">Assista os melhores filmes de 2024</h2>" como seletor para fazer a aplicação do estilo.
+
+        .art-titulo {
+        color: coral;
+        }
+                
+        -->
+
+        <!-- 
+        
+        Desta maneira, estamos especificando ainda mais a estilização dos elementos de texto do html. Da forma abaixo, está especificando que somente o elemento da classe "art-titulo" dentro do elemento da classe "art-post", é da cor coral.
+
+        .art-post .art-titulo {
+        color: coral;
+        }
+
+        -->
+
+        <span class="art-autor">Danilo Cardoso 28/10/2024 14:00</span>
+
+        <!-- 
+
+        Da forma abaixo, está especificando que somente o elemento da classe "art-autor" dentro do elemento da classe "art-post", é da cor gray.
+
+        .art-post .art-autor {
+        color: gray;
+        }
+        -->
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod vitae consequuntur, assumenda eligendi tempora quibusdam illo hic! Delectus, vel iste? Quas illum ex molestiae, fuga voluptatem sit nesciunt quis delectus?
+        </p>
+
+        <!-- 
+
+        Da forma abaixo, somente o elemento da classe "art-post" é da cor brown.
+
+        .art-post {
+            color: brown;
+        }
+
+        -->
+
+
+        <a class="art-link" href="https://amazon.com.br" target="_blank">Saiba mais</a>
+
+        <!--
+
+            body {
+            font-family: Arial;
+            }
+
+            Define a fonte global do site como Arial para todos os textos dentro da tag <body>.
+
+        -------------------------------------------------------------------------------------
+
+            .art-post .art-titulo {
+            color: coral;
+            }
+
+            Estiliza o título de cada post, assumindo que ele esteja dentro de um contêiner com a classe .art-post. O texto dos elementos .art-titulo terá a cor coral.    
+
+        -------------------------------------------------------------------------------------
+
+            .art-post .art-autor {
+            color: gray;
+            }
+
+            Estiliza o autor do post, assumindo que ele esteja dentro de um contêiner .art-post. O texto dos elementos .art-autor será cinza.
+
+        -------------------------------------------------------------------------------------
+            
+            #titulo {
+            color: green;
+            }
+
+            Altera a cor para verde de qualquer elemento que tenha o id="titulo". Este seletor usa o ID, que é único e aplicado a um único elemento na página.
+
+        -------------------------------------------------------------------------------------
+
+            .art-link {
+            color: aqua;
+            }
+
+            Define a cor padrão como aqua para links com a classe .art-link.
+
+        -------------------------------------------------------------------------------------
+
+            .art-link:hover {
+            color: darkcyan;
+            }
+
+            Quando o usuário passa o mouse sobre um link .art-link, a cor muda para darkcyan.
+
+        -------------------------------------------------------------------------------------
+
+            .art-link:visited {
+            color: purple;
+            }
+
+            Quando um link .art-link já foi visitado, ele muda para a cor purple.
+
+        -------------------------------------------------------------------------------------
+
+            .art-link:active {
+            color: crimson;
+            }
+
+            Durante o clique em um link .art-link, ele muda temporariamente para a cor crimson.
+
+        -------------------------------------------------------------------------------------
+
+            .art-link:focus {
+            border: 2px dashed violet;
+            }
+
+            Quando o link .art-link está em foco (por exemplo, ao ser selecionado via teclado), é adicionado uma borda dashed de 2px na cor violet ao redor do link.
+            
+         -------------------------------------------------------------------------------------   
+
+            #titulo:hover {
+            background: pink;
+            }
+
+            Seleciona o elemento com o ID titulo e aplica um estilo somente enquanto o mouse está sobre ele (usando a pseudo-classe :hover).
+            Quando o usuário passa o cursor sobre o elemento #titulo, o fundo muda para a cor pink.
+
+        -->
+
+    </article>
+    
+</body>
+</html>
