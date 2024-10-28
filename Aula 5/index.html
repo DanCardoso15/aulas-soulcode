@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- A tag <link> faz o link do arquvio .html com o link .css -->
+    <!-- O link é feito para a estilização externa -->
+    <!-- A estilização será priorizada sempre a que está mais próxima como uma regra de hierarquia. A estilização externa só será aplicada caso não tenha nenhuma estilização interna e/ou em linha. A hierarquia fica na seguinte ordem: 1º Estilização em linha, 2º Estilização interna, 3º Estilização externa -->
+    <!-- A estilização externa é mais utilizada por razões de organização do código. -->
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Dentro da tag <style> é somente para código CSS. Essa é a forma de estilização interna -->
+    <!-- Com a estilização interna, é aplicado o estilo em todos os parágrafos sem estilização -->
+    <!-- A tag <style> pode ser colocado em qualquer lugar, mas o ideal é ficar dentro do <head> -->
+    <!-- A priorização sempre irá ocorrer com a último propriedade colocada na estilização conforme exemplo abaixo com a propriedade "color"-->   
+
+    <style>
+        p {
+            font-size: 64px;
+            color: darkcyan;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+    <!-- O atributo "style" é aplicado no paragráfo. Está sendo aplicado o formato de estilização em linha -->
+    <!-- A propriedade "color" define a cor do texto. Com o atalho "Ctrl + espaço" aparecem as cores para escolher. Se passar o mouse encima da caixa de cor, é aberto o "rgb" para definição de cor -->
+    <!-- A propriedade "font-size" define o tamanho da fonte da letra. O tamanho padrão da fonte é 16px -->
+    <!-- A estilização em linha (inline) tem prioridade maior em comparação a estilização interna -->
+     
+    <h1>Seletores CSS</h1>
+    <h2>Conheça alguns seletores</h2>
+    <p style="color:burlywood; font-size: 35px;">Olá, CSS!</p>
+    <p>Olá, HTML!</p>
+    <P>Olá, JS!</P>
+
+</body>
+</html>
+
+<!-- CSS Externo 
+
+** O Escopo representa um bloco de código. 
+
+Ex: Escopo do bloco de códigos do seletor
+    <seletor> {
+                escopo
+    }
+
+** É possivel aplicar a alteração da fonte, cor, etc, em mais de um seletor ao mesmo tempo.
+
+Ex: Mesma fonte sendo usado para seletores diferentes
+    p, h1, h2 {
+        font-family: arial;
+    }
+
+-->
