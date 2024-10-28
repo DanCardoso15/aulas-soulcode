@@ -1,0 +1,62 @@
+#titulo {
+    color: aliceblue;
+    font-family: Arial;
+    background-color:grey;
+}
+
+.secao {
+    color: black;
+    font-family: Arial;
+}
+
+.secao .tit-2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: crimson;
+}
+
+.secao .lista {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: upper-roman;
+    font-weight: bold;
+}
+
+.secao .lista .item1:hover {
+    color: blue;
+}
+
+.secao .lista .item2:hover {
+    color: red;
+}
+
+.secao .lista .item3:hover {
+    color: green;
+}
+
+.secao .lista .item4:hover {
+    color: saddlebrown;
+}
+
+.secao .lista .item5:hover {
+    color: orangered;
+}
+
+.rodape {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:darkkhaki;
+}
+
+.rodape:hover {
+    padding: 10px;
+    border: 2px solid transparent;
+    border-color: lightslategrey;
+    background-color:darkkhaki;
+    transition: border-color 0.5s ease;
+}
+
+.rodape .p-link {
+    color: blue; 
+}
+
+.rodape .p-link:visited {
+    color: purple; 
+}
