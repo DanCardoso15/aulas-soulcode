@@ -1,0 +1,84 @@
+/* Método por import 
+
+Esse é o import da fonte "Roboto". O import deve ser colado no aquivo css. Se optar por essa forma, não é necessário usar pelo método de link 
+
+O melhor site de fontes é: https://fonts.google.com/ 
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Método por import */
+
+h2 {
+    color: #2e9494; /* Define a cor do texto */
+    background-color: aquamarine; /* Define a cor de fundo */
+    font-family: verdana, arial, Arial, Helvetica, sans-serif; /* Define a família de fontes usada para exibir o texto. */
+
+    font-size: 2rem;  /* Define o tamanho da fonte do texto*/
+    
+    /* O valor em rem é relativo ao tamanho da fonte da raiz, ou seja, o elemento <html>. Por padrão o tamanho da fonte é 16px. 1rem é equivalente a quantidade padrão de px da fonte. Neste caso, 2rem é equivalente a 32px = 16px * 2rem. 
+    
+    "rem "mantém o mesmo tamanho em toda a página, independentemente da hierarquia, tornando-o previsível. */
+
+    text-align: center; /* Define o alinhamento horizontal do texto */
+
+    line-height: 1.3; /* Define o tamanho da linha*/
+
+    letter-spacing: 5px; /* Define o espaçamento entre as letras */
+
+    word-spacing: 50px; /* Define a distancia entre as palavras */
+
+    display: inline; /* Os elementos "inline" dividem o mesmo espaço e ignora as margens da tela. Para considerar as margens, deve alterar para "inline-block" */
+}
+
+p {
+    color: hsl(0, 100%, 50%);
+    background-color:   #8271a1;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+
+    text-transform: capitalize; /* define a transformação do texto, permitindo modificar a capitalização das letras (caixa alta, caixa baixa, etc.) sem precisar alterar o conteúdo original. */
+}
+
+p a {
+    font-size: 1.5em; /* O valor em "em" é relativo ao tamanho da fonte do elemento pai(16px por padrão). Como neste caso o elemento pai tem font-size de 18px, 1.5em é equivalente a 27px = 18 * 1.em. */
+    
+    font-style: italic; /* Define estilo da fonte */
+    font-weight: 600; /* Define a espessura da fonte, ajustando o peso do texto para mais leve ou mais forte */ 
+
+    text-decoration: line-through; /* Define efeitos de decoração aplicados ao texto, como sublinhado, riscado ou sobrelinha. */
+
+    text-transform: uppercase;
+}
+
+#box {
+    background-color: rgb(110, 105, 104);
+    color: white;
+    height: 120px; /* Altura */
+    width: 50vw; /* Largura */
+    padding: 20px 10px; /* Margem (Espaçamento interno) */ /* cima, direita, baixo, esquerda */
+    border: 5px solid #021818; /* Borda */
+    margin: 35px 40px 35px 20px; /* Margem (Espaçamento externo) */ /* cima, direita, baixo, esquerda */
+    /* box-sizing: border-box; /* Define o tamanho da caixa. O "border-box" deve ser sempre padrão */
+}
+
+#imagem, #gradiente {
+    height: 200px;
+    background-color: black;
+    margin: 10px 0px;
+}
+
+#imagem {
+    background-image: url("https://a.espncdn.com/i/teamlogos/soccer/500/874.png"); /* "url" permite adicionar imagem no plano de fundo */
+
+    background-size: cover; /* Define o tamanho da imagem */ /* "cover" faz com que a imagem se ajuste conforme o tamanho da tela e preencha totalmente o espaço */
+
+    background-repeat: no-repeat; /* Define se a imagem vai se repetir ou não */ /* "no-repeat" faz com que a imagem não se repita */
+
+    background-attachment: fixed; /* "fixed" deixa a imagem fixa no plano de fundo */
+}
+
+#gradiente {
+    background-image: linear-gradient(45deg, black, white); /* Define várias cores no plano de fundo através do "linear-gradient" */ /* "deg" defini o grau do gradiente. Ex: 45deg */ /* "to right ou to left" defini o lado do gradiente */
+}
