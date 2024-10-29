@@ -40,12 +40,12 @@
     color: orangered;
 }
 
-.rodape {
+footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color:darkkhaki;
 }
 
-.rodape:hover {
+footer:hover {
     padding: 10px;
     border: 2px solid transparent;
     border-color: lightslategrey;
@@ -53,10 +53,10 @@
     transition: border-color 0.5s ease;
 }
 
-.rodape .p-link {
+footer a {
     color: blue; 
 }
 
-.rodape .p-link:visited {
+footer a:visited {
     color: purple; 
 }
