@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+.box {
+    border: 2px dashed gray;
+    padding: 5px;
+    /* min-height: 100vh; */
+    box-sizing: border-box;
+
+    /* Todas as propriedades "flex" são colocadas na caixa/box */
+    
+    display: flex; /* ativa o modelo de layout flexível (Flexbox), permitindo um controle mais preciso sobre a disposição dos elementos filhos dentro da .box */
+
+    flex-direction: row; /* "flex-direction" determina se os items irão ficar em row/linha (lado a lado) ou em column/coluna (um abaixo do outro) */ 
+
+    flex-wrap: wrap; /* "flex-wrap" controla o comportamento de quebra de linha dos itens em um container flexível. "wrap" permite fazer a quebra de linha conforme a tela se ajusta */ 
+
+    /* "flex-flow: row wrap;" É um ataalho para flex-direction: row e flex-wrap: wrap */
+
+    justify-content: center; /* "justify-content:" Alinha os itens ao longo do eixo principal (horizontal, por padrão). 
+    "start;" inicio, "center;" meio, "end;" final, "space-between;" alinhamento espaçado  */ 
+
+    align-items: center; /* "align-items:" Alinha os itens ao longo do eixo perpendicular (vertical, por padrão).) */ /* "stretch;" estica, "end;" fim da tela, "start;" topo da tela, "center" centro da tela/linha */
+
+    align-content: stretch; /* "align-content:" Alinha as linhas de itens no eixo perpendicular, quando há múltiplas linhas de conteúdo. Ele precisa do flex-wrap para funcionar por causa da quebra de linha */
+
+    gap: 10px; /* Define o espaçamento entre os itens dentro do container flexível. */
+
+}
+
+.box div {
+    box-sizing: border-box;
+    min-width: 150px;
+    padding: 15px 30px;
+    flex: 1; /* Os itens se adaptam ao tamanho da tela */
+}
+
+.box .item-5 {
+    flex: 3; /* o número do "flex" reflete a proporção que o item será esticado. Quanto maior o número, maior a proporção */
+}
+
+.item-1 {
+    background-color: tomato;
+}
+
+.item-2 {
+    background-color: yellowgreen;
+    /* align-self: stretch; */
+}
+
+.item-3 {
+    background-color: aquamarine;
+    /* align-self: end; Sempre no item porque a alteração é feita sempre no item em especifico */
+}
+
+.item-4 {
+    background-color: crimson;
+}
+
+.item-5 {
+    background-color: darkolivegreen;
+}
+
+.item-6 {
+    background-color: darkslategray;
+}
+
+/****************************************************** Responsividade ****************************************************/
+
+h1 {
+    font-size: 36px;
+    font-family: Arial;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 1400px) { /* Está configurando para tela acima de 1400px  */
+    h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 640px) { /* Está configurando para tela abaixo 640px */
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) { /* Está configurando o texto para tela abaixo 480px */
+    h1 {
+        font-size: 28px;
+        letter-spacing: normal;
+    }
+}
+
+
