@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameStore</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-retro">
+  <!-- Cabeçalho com logotipo e menu de navegação -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top bg-danger bg-gradient">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1>
+            <img class="d-block mt-2" src="./gamestore_logo_barra.png" alt="Logo GameStore" width="172.5" height="45">
+          </h1>
+        </a>
+        <button class="navbar-toggler border border-secondary navbar-dark" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon custom-toggler"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-danger" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header bg-danger bg-gradient">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body font-barra">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-white" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-white" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-white" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-white" href="#">Cadastre-se</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção principal com título chamativo e imagem -->
+    <section>
+      <div class="container row mx-auto">
+        <div class="d-flex flex-column flex-lg-row align-items-center">
+          <img src="./gamestore_logo_pagina.png" class="img-fluid" alt="Logo GameStore Completo">
+          <h1 class="display-4 fw-medium text-dark text-justify font my-3 my-xl-5 ">Reviva a Nostalgia: Os clássicos
+            que
+            marcaram
+            gerações é aqui na GameStore!</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seções de conteúdo para destacar produtos/serviços, planos/preços, depoimentos e imagens -->
+    <section>
+      <!-- Carrossel -->
+      <div class="container row mx-auto my-3">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img-fluid" src="./nintendo.jpg" alt="Super nintendo com jogos">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="./megaDrive.jpg" alt="Mega Drive com jogos">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="./atari.jpg" alt="Atari com jogos">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <h2 class="container text-center font fw-normal display-5 mt-4 my-xl-5">Busque por categoria:</h2>
+
+        <!-- Cards: Categoria -->
+        <div class="container row mx-auto g-2">
+          <div class="col-6 col-md-3 col-xxl-3">
+            <div class="card">
+              <a href="#" style="color: white; text-decoration: none">
+                <img class="img-fluid" src="./consoles.jpg" alt="Consoles Retrô">
+                <div class="card-header bg-secondary text-bg-primary">
+                  <p class="text-center card-text">
+                    Consoles
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-xxl-3">
+            <div class="card">
+              <a href="#" style="color: white; text-decoration: none">
+                <img class="img-fluid" src="./jogos.jpg" alt="Jogos">
+                <div class="card-header bg-secondary text-bg-primary">
+                  <p class="text-center card-text">
+                    Jogos
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-xxl-3">
+            <div class="card">
+              <a href="#" style="color: white; text-decoration: none">
+                <img class="img-fluid" src="./ofertas.jpg" alt="Ofertas">
+                <div class="card-header bg-secondary">
+                  <p class="text-center card-text p p-responsive">
+                    Ofertas Especiais
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-xxl-3">
+            <div class="card">
+              <a href="#" style="color: white; text-decoration: none">
+                <img class="img-fluid" src="./limitada.jpg" alt="Limitados">
+                <div class="card-header bg-secondary text-bg-primary">
+                  <p class="text-center card-text">
+                    Edição Limitada
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="container text-center font fw-normal display-5 my-3 my-xl-5">
+          Consoles e Jogos com os melhores preços:
+        </h2>
+
+        <!-- Cards: Produtos -->
+        <div class="container row mx-auto">
+          <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+              <div class="ratio ratio-1x1">
+                <img class="img-fluid"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/SNES-Mod1-Console-Set.jpg/1024px-SNES-Mod1-Console-Set.jpg"
+                  alt="Consoles Retrô" style="object-fit: contain;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Super Nintendo</h5>
+                <p class="card-text text-justify">
+                  Ideal para colecionadores e apaixonados por retrô games, o Super Nintendo oferece uma experiência
+                  nostálgica com diversão garantida. Garanta o seu e volte no tempo com o console que revolucionou o
+                  mundo
+                  dos videogames!
+                </p>
+                <p class="fw-bold">
+                  R$ 650,00
+                </p>
+                <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais <i class="bi bi-hand-index"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+              <div class="ratio ratio-1x1">
+                <img class="img-fluid"
+                  src="https://images-americanas.b2w.io/produtos/7391657746/imagens/cartucho-fita-jogo-super-mario-world-super-nintendo-snes/7391657754_1_xlarge.jpg"
+                  alt="Consoles Retrô" style="object-fit: contain;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Super Mario Word</h5>
+                <p class="card-text text-justify">
+                  Embarque em uma jornada inesquecível com Super Mario World! Neste clássico absoluto do Super Nintendo,
+                  Mario e Luigi exploram a colorida Dinosaur Land para resgatar a Princesa Peach das garras de Bowser.
+                </p>
+                <p class="fw-bold">
+                  R$ 100,00
+                </p>
+                <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais <i class="bi bi-hand-index"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+              <div class="ratio ratio-1x1">
+                <img class="img-fluid"
+                  src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ9v1Pr89QXthG7TV_Kj1ncjKZkmzxxro6q-Ia-sFCIiVaSIqRH9Tbi-nNw3Y9HD2SU4hK8J5nLhRHsdLQS_V2hXzf0iq2pA91gjYFw6-WdTtpJ3474jXM41g&usqp=CAE"
+                  alt="Consoles Retrô" style="object-fit: contain;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Controle 6 botões - Mega Drive</h5>
+                <p class="card-text text-justify">
+                  Experimente a precisão e o controle como nunca antes com o controle de 6 botões do Mega Drive!
+                  Perfeito para jogos de luta e aventuras intensas, esse controle oferece conforto e resposta rápida,
+                  tornando suas jogatinas ainda mais emocionantes.
+                </p>
+                <p class="fw-bold">
+                  R$ 75,00
+                </p>
+                <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais <i class="bi bi-hand-index"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+              <div class="ratio ratio-1x1">
+                <img class="img-fluid"
+                  src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSpogBlnifizWrug8SECmIJ0qrPElSLkP32aYzgQZ3VVlyIztbzySzXoY3_zBVh_hnY2c5HQOXsC01HYAl2uiwseBP7XOTU2wuCaEECJqECAxKpFKRLBTZTzQ&usqp=CAE"
+                  alt="Consoles Retrô" style="object-fit: contain;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"> Game Boy Color Standard cor grape</h5>
+                <p class="card-text text-justify">
+                  É portátil, leve e fácil de carregar, tornando-se o companheiro perfeito para todas as suas aventuras.
+                  Ideal para levar para qualquer lugar que você quiser e brincar com seus amigos e familiares,
+                  proporcionando diversão sem fim em qualquer ocasião.
+                </p>
+                <p class="fw-bold">
+                  R$ 150,00
+                </p>
+                <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais <i class="bi bi-hand-index"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+              <div class="ratio ratio-1x1">
+                <img class="img-fluid"
+                  src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcToErP1-Sg25QBgM296OoLHimtSGzGrC7FzNbc7IveGthVEu2_1lzPwNQFuMBqDN5walLmvHfF2g0zJRbSPWgxiYjSmrCQi-F53uZ6jFEYv7uLUHpWEeabT&usqp=CAE"
+                  alt="Consoles Retrô" style="object-fit: contain;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Nintendinho Classic Edition 30 Jogos</h5>
+                <p class="card-text text-justify">
+                  Reviva a nostalgia e a emoção de alguns dos seus videogames favoritos ou descubra os clássicos pela
+                  primeira vez com o NES Classic Edition. Este console traz de volta a magia dos jogos antigos,
+                  permitindo que você mergulhe em aventuras inesquecíveis e reviva momentos icônicos.
+                </p>
+                <p class="fw-bold">
+                  R$ 500,00
+                </p>
+                <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais <i class="bi bi-hand-index"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xxl-4 pb-4">
+            <div class="card">
+              <div class="ratio ratio-1x1">
+                <img class="img-fluid" src="https://http2.mlstatic.com/D_NQ_NP_2X_964942-MLA79406581488_092024-F.webp"
+                  alt="Consoles Retrô" style="object-fit: contain;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Sony PlayStation Classic 16GB Standard cor cinza 2020</h5>
+                <p class="card-text text-justify">
+                  Pré-carregado com 20 jogos PlayStation, como o Final fantasy VII, Jumping Flash, Tekken 3 e Wild Arms,
+                  o
+                  PlayStation Classic é perfeito para os fãs nostálgicos que desfrutaram da experiência de jogo no
+                  PlayStation original.
+                </p>
+                <p class="fw-bold">
+                  R$ 950,00
+                </p>
+                <a href="#" class="btn btn-primary rounded-0 border-0">Ver mais <i class="bi bi-hand-index"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Rodapé com informações de contato e links para redes sociais -->
+  <footer class="text-center bg-danger bg-gradient font-barra">
+    <p class="card-text text-white py-3">
+      <a href="#" style="color: white; text-decoration: none"><i class="bi bi-telephone-fill"></i> Fale conosco</a>
+      <a href="#" style="color: white; text-decoration: none"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="#" style="color: white; text-decoration: none"><i class="bi bi-facebook"></i> Facebook</a>
+
+      <br> 2024 <i class="bi bi-c-circle"></i> gamestore.com | Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
