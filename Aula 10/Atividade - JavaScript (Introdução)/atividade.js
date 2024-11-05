@@ -14,6 +14,9 @@ console.log(x * y); // 56
 // A divisão dos números.
 console.log(x / y); // 0.875
 
+// A exponênciação dos números.
+console.log(x ** y); // 
+
 // 2. Dado o valor let x = 10, utilize operadores de atribuição para modificar e exibir o valor de x da seguinte forma:
 
 let xx = 10;
