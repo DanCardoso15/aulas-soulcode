@@ -53,6 +53,12 @@ console.log(5 > 6); // false
 // Se o primeiro numero é menor ou igual ao segundo.
 console.log(7 <= 15); // true
 
+// Se o numero é par
+console.log(4 % 2 == 0); // true
+
+// Se o numero é impar
+console.log(5 % 2 != 0); // true
+
 // 5. Crie um código que tenha três valores booleanos e mostre:
 
 // A conjunção de todos eles.
@@ -63,6 +69,7 @@ console.log(5 > 1 || 9 < 15 || 5 == 5); // true
 
 // A negação da disjunção de todos eles.
 console.log(!(5 > 1 || 9 < 15 || 5 == 5)); // false
+
 
 
 
