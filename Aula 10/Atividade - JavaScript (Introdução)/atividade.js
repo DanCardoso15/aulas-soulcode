@@ -31,7 +31,7 @@ console.log(xx); // 12
 
 // Multiplique x por 2.
 xx *= 2
-console.log(xx); 24
+console.log(xx); // 24
 
 // Divida x por 4.
 xx /= 4
