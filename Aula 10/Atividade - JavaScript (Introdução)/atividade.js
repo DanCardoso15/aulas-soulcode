@@ -51,7 +51,7 @@ console.log("Uva" != "uva"); // true
 console.log(5 > 6); // false
 
 // Se o primeiro numero é menor ou igual ao segundo.
-console.log(7 < 15); // true
+console.log(7 <= 15); // true
 
 // 5. Crie um código que tenha três valores booleanos e mostre:
 
