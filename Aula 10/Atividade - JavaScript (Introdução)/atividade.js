@@ -60,15 +60,16 @@ console.log(4 % 2 == 0); // true
 console.log(5 % 2 != 0); // true
 
 // 5. Crie um código que tenha três valores booleanos e mostre:
+let p = true; q = false, s = true;
 
 // A conjunção de todos eles.
-console.log(5 > 1 && 9 < 15 && 5 == 5); // true
+console.log(p && q && s); // false
 
 // A disjunção de todos eles.
-console.log(5 > 1 || 9 < 15 || 5 == 5); // true
+console.log(p || q || s); // true
 
 // A negação da disjunção de todos eles.
-console.log(!(5 > 1 || 9 < 15 || 5 == 5)); // false
+console.log(!(p || q || s)); // false
 
 
 
