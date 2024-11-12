@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    
+    <button id="btn">Clique</button> <!-- "id" é para o JS e "classe" é para o CSS -->
+
+    <h2 id="nome">...</h2>
+    <input type="text" id="campo-nome">
+
+    <script>
+        const btn = document.querySelector("#btn");
+            btn.addEventListener("click", () => { // Ouvidor de Evento/EventListener -> É a reação após evento
+            btn.innerText = "CLICOU!";    
+        });
+
+        btn.addEventListener("dblclick", () => { // Primeiro paramentro: é o nome do evento, Segundo parametro: é o callback/função
+            btn.innerText = "CLICOU 2X";
+            window.alert("Você clicou duas vezes no botão.");
+        });
+
+        const nome = document.querySelector("#nome");
+        const campoNome = document.querySelector("#campo-nome");
+
+        campoNome.addEventListener("keyup", () => {
+            const text = campoNome.value;
+            nome.innerText = text;
+        });
+
+    </script>
+</body>
+</html>
+
+<!-- Evento é toda ação feita pelo usuário -->
