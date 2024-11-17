@@ -27,7 +27,7 @@ console.log(calculadora(5, 5)); // por padrão, está realizando o calculo de so
 // Funções Recursivas
 // Fatorial !5 = 5 * 4 * 3 * 2 * 1;
 function fatorial(numero) {
-    if (numero == 1) {
+    if (numero == 1 || numero == 0) {
         return 1;
     } else {
         return numero * fatorial(numero - 1);
